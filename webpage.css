@@ -1,0 +1,134 @@
+html, body{
+    height: 100%;
+    margin: 0 auto;
+}
+.fluid-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    min-height: 100%;
+}
+.container {
+    max-width: 640px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        min-width: 960px;
+    }
+
+    .fluid-wrap {
+        min-width: 960px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 840px;
+    }
+
+    .fluid-wrap {
+        max-width: 840px;
+    }
+}
+
+.topbar {
+    background: #ededed;
+    color: darkmagenta;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    background: #ededed;
+    color: darkmagenta;
+    bottom: 0;
+    position:absolute;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footercontainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover, .dropdown:hover {
+    background-color: darkmagenta;
+}
+
+.nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.articles {
+    display: none;
+}
+
+.sectionarticles {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+.sections {
+    color: darkmagenta;
+}
+#section {
+    height: 100%;
+}
