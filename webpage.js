@@ -22,11 +22,13 @@ jQuery('.dropdown-content a').click(function(e){
         content.children().removeClass('active');
         content.children('#article5').addClass('active');
     }
+    return false;
  });
 
 jQuery('a.sections').click(function(e){
     $('.sectionarticles').removeClass('active');
     var elm = $(e.target).parent('a');
     elm.siblings('div.sectionarticles').addClass('active');
+    return false;
 });
 
