@@ -118,17 +118,14 @@ html, body{
     display: none;
 }
 
-.sectionarticles {
-    display: none;
-}
-
 .active {
-    display: inline-block;
+    display: block;
 }
 
-.sections {
+#section a {
     color: darkmagenta;
 }
 #section {
     height: 100%;
 }
+

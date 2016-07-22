@@ -4,7 +4,7 @@
 'use strict';
 
 
-jQuery('.dropdown-content a').click(function(e){
+jQuery('.nav').click(function(e){
     var content = $('#content');
     if ($(e.target).is('#link1')){
         content.children().removeClass('active');
@@ -24,10 +24,10 @@ jQuery('.dropdown-content a').click(function(e){
     }
  });
 
-jQuery('a.sections').click(function(e){
+jQuery('div#section').click(function(e){
     e.preventDefault();
-    $('.sectionarticles').removeClass('active');
+    $('#'+this.id + ' article').removeClass('active');
     var elm = $(e.target).parent('a');
-    elm.siblings('div.sectionarticles').addClass('active');
+    elm.siblings('article').addClass('active');
 });
 
